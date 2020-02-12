@@ -1,3 +1,5 @@
+This is a Starter project boilerplate that has been configured with [Typescript](https://www.typescriptlang.org/) [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
