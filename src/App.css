@@ -40,6 +40,19 @@
   border: 1px solid gray;
 }
 
+.btn-style {
+  padding: 5px;
+  width: 200px;
+  color: #61dafb;
+  background: #565555;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-style:disabled {
+  background: #dddddd;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,5 +1,5 @@
 import * as MyTypes from 'MyTypes';
-import { actionTypes } from '../actions/actions';
+import { accountActionTypes } from '../actions/actions';
 
 interface AccountModel {
   balance: number;
@@ -14,9 +14,9 @@ export const accountReducer = (
   action: MyTypes.RootAction
 ): AccountModel => {
   switch (action.type) {
-    case actionTypes.DEPOSIT:
+    case accountActionTypes.DEPOSIT:
       return { balance: state.balance + action.payload };
-    case actionTypes.WITHDRAW:
+    case accountActionTypes.WITHDRAW:
       return { balance: state.balance - action.payload };
 
     default:

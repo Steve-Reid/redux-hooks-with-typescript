@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import * as MyTypes from 'MyTypes';
-import { actionTypes } from '../actions/actions';
+import { accountActionTypes } from '../actions/actions';
 
 interface DepositPageProps {}
 
@@ -13,13 +13,15 @@ export const DepositPage: React.FC<DepositPageProps> = () => {
   const dispatch = useDispatch();
 
   const handleDeposit = (): void => {
-    dispatch({ type: actionTypes.DEPOSIT, payload: 10 });
+    dispatch({ type: accountActionTypes.DEPOSIT, payload: 10 });
   };
 
   return (
     <div>
       <h1>Balance: {balance}</h1>
-      <button onClick={handleDeposit}>Deposit</button>
+      <button className="btn-style" onClick={handleDeposit}>
+        Deposit
+      </button>
     </div>
   );
 };
