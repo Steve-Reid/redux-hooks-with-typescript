@@ -1,4 +1,6 @@
-This is a Starter project boilerplate that has been configured with [Typescript](https://www.typescriptlang.org/) [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
+This is a very simple typscripted [redux](https://redux.js.org/recipes/usage-with-typescript) account app to demonstrate the usage of the useSelector and useDispatch hooks from [react-redux](https://react-redux.js.org/using-react-redux/static-typing)
+
+This demo project was built from a [Starter project boilerplate](https://github.com/Steve-Reid/create-react-app-typescript) that has been configured with [Typescript](https://www.typescriptlang.org/) [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
