@@ -4,6 +4,7 @@ import { action } from 'typesafe-actions';
 export enum accountActionTypes {
   DEPOSIT = 'DEPOSIT',
   WITHDRAW = 'WITHDRAW',
+  LOADING = 'LOADING',
 }
 
 export enum loanActionTypes {
@@ -13,6 +14,7 @@ export enum loanActionTypes {
 export const accountActions = {
   deposit: (amount: number) => action(accountActionTypes.DEPOSIT, amount),
   withdraw: (amount: number) => action(accountActionTypes.WITHDRAW, amount),
+  loading: () => action(accountActionTypes.LOADING),
 };
 
 export const loanActions = {

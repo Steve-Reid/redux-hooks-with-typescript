@@ -53,6 +53,53 @@
   background: #dddddd;
 }
 
+.loader {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+.loader:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  background: #282c34;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+  border-radius: 50%;
+  z-index: 1000;
+  z-index: 1;
+  filter: blur(3px);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
