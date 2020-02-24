@@ -1,4 +1,4 @@
-This is a very simple typscripted [redux](https://redux.js.org/recipes/usage-with-typescript) account app to demonstrate the usage of the useSelector and useDispatch hooks from [react-redux](https://react-redux.js.org/using-react-redux/static-typing)
+This is a very simple typescript [redux](https://redux.js.org/recipes/usage-with-typescript) account app to demonstrate the usage of the useSelector and useDispatch hooks from [react-redux](https://react-redux.js.org/using-react-redux/static-typing)
 
 The app also demonstrates the use of asyc actions with aid of [redux-thunk](https://github.com/reduxjs/redux-thunk)
 
